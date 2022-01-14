@@ -478,7 +478,7 @@ with st.container():
 # Here we modify the tickangle of the xaxis, resulting in rotated labels.
     fig_8.update_layout(barmode='group', xaxis_tickangle=-45)
     st.plotly_chart(fig_8)
-    st.write("[Click here to download the data ](https://www.bfs.admin.ch/bfsstatic/dam/assets/15324707/master)")
+    st.write("[Click here to download the data (data are from 2017) ](https://www.bfs.admin.ch/bfsstatic/dam/assets/15324707/master)")
 
 st.markdown('As we can see the Switzerland is the best for the male life expectancy, and for the happiness score. We can see also that Italy has the lowest suicide rate, while having the lowest happiness score and the lowest health expenditure per capita. ')
 
