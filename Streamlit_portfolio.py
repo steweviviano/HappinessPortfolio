@@ -24,9 +24,9 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 pio.templates.default = "seaborn"
 
-df20 = pd.read_csv('C:/Users/39389/Desktop/DATA VIZ PROJECT/datasets/Merged dataset/2020.csv')
-df21 = pd.read_csv('C:/Users/39389/Desktop/DATA VIZ PROJECT/datasets/Merged dataset/2021.csv')
-df_ink2 = pd.read_csv('C:/Users/39389/Desktop/DATA VIZ PROJECT/datasets/world-happiness-report.csv')
+df20 = pd.read_csv('2020.csv')
+df21 = pd.read_csv('2021.csv')
+df_ink2 = pd.read_csv('world-happiness-report.csv')
 
 lcols = [0,1,2,6,7,8,9,10,11]
 df20 = df20.iloc[:, lcols]
@@ -110,7 +110,7 @@ with st.container():
         st_lottie(lottie_coding, height= 300, key= "coding")
 
 
-data_2021 = pd.read_csv('C:/Users/39389/Downloads/world-happiness-report-2021 (1).csv')
+data_2021 = pd.read_csv('world-happiness-report-2021 (1).csv')
 happy_world = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_Z6rQ9X.json")
 sad_world = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_sw7ogx3k.json")
 with st.container():
@@ -138,7 +138,7 @@ with st.container():
     st.subheader('This Visualization could be improved')
     left_column, right_column = st.columns(2)
     with left_column:
-        image = Image.open('C:/Users/39389/Pictures/Bad Vizual.jpg')
+        image = Image.open('Bad Vizual.jpg')
         with st.container():
             st.image(image,
                     caption='This is a bad Visualization',
@@ -236,7 +236,7 @@ with st.container():
     st.subheader("That's a good Visualization")
     left_column, right_column = st.columns(2)
     with left_column:
-        image = Image.open('C:/Users/39389/Desktop/DATA VIZ PROJECT/Good visualization.png')
+        image = Image.open('Good visualization.png')
         with st.container():
             st.image(image,
                     
@@ -254,7 +254,7 @@ with st.container():
     st.subheader("Visualization of the author's happiness")
     left_column, right_column = st.columns(2)
     with left_column:
-        image = Image.open('C:/Users/39389/Downloads/Personal Viz.png')
+        image = Image.open('Personal Viz.png')
         with st.container():
             st.image(image,
                     
@@ -288,7 +288,7 @@ with st.container():
     
     left_column, right_column = st.columns(2)
     with left_column:
-        image = Image.open('C:/Users/39389/Desktop/DATA VIZ PROJECT/merged image.png')
+        image = Image.open('merged image.png')
         with st.container():
             st.image(image,
                     
@@ -512,7 +512,7 @@ st.markdown('The scatterplot that best explain the correlation between happiness
 
 
 
-fuldf = pd.read_csv("C:/Users/39389/Downloads/dff.csv")
+fuldf = pd.read_csv("dff.csv")
  
 st.subheader('Documentation on how to improve a Viz')
 st.write('In this portfolio we analyzed how some features impact on the happiness of a country (as health expenditure and GDP per capita). Now we want to analyze how the freedome to make life choices impact the happiness of a country. I will show how, improving the same visualization (a scatterplot) we can improve the understanding and the quality of the plot. In order to see the difference you can click 3 different buttons below, that will show how, using the same data, the visualization can change a lot')
