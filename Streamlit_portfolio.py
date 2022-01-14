@@ -146,6 +146,7 @@ with st.container():
             
         with right_column:
             st.write("At first glance, seeing this chart, we notice that the choice of colors is a bit misleading. First, a color palette is used, the lightest color represents the first country for happiness (Finland), while the darkest color represents the last country (South Sudan). The problem with this graphic representation is that it would have been better to use different colors to make the country more recognizable. The best way to recognize the country exactly is to count the bars, fortunately, ordered, so as to understand exactly what shade of the color represents each country. In addition, I would have preferred to put the name of the countries in the X-axis, representing with colors the various features selected. In this way, we would have a clearer comparison between the countries' happiness, directly displaying all metrics belonging to the same country in a stacked bar plot.  ")
+            st.write("[Click here for the author of this visualization ](https://www.reed.edu/math/241/2020/04/28/analyzing-world-happiness/)")
     st.write("---")
 
 #Good Viz container
