@@ -116,8 +116,8 @@ sad_world = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_sw7ogx
 with st.container():
     st.header('Survey')
     st.subheader('These are the result from 2021')
-    st.write('If you want to know more about the dataset visit the link below')
-    st.write("[Click here for information about the World Happiness Index](https://www.kaggle.com/unsdsn/world-happiness?select=2018.csv)")
+    st.write('The happiness scores and rankings use data from the Gallup World Poll. The scores are based on answers to the main life evaluation question asked in the poll.')
+    st.write("[Click here for more information about the World Happiness Index](https://www.kaggle.com/unsdsn/world-happiness?select=2018.csv)")
     
     st.text('Click on the columns names to organize the data as you prefer.')
     st.dataframe(data_2021)
