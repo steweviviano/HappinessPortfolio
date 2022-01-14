@@ -116,6 +116,9 @@ sad_world = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_sw7ogx
 with st.container():
     st.header('Survey')
     st.subheader('These are the result from 2021')
+    st.write('If you want to know more about the dataset visit the link below')
+    st.write("[Click here for information about the World Happiness Index](https://www.kaggle.com/unsdsn/world-happiness?select=2018.csv)")
+    
     st.text('Click on the columns names to organize the data as you prefer.')
     st.dataframe(data_2021)
     st.write('This is an interactive table, if you want to check the data from which the visualization come from, feel free to do it. The table is always a good form of data viz, for this reason I decided to put it anyway, in order to organize better the CSV file. In case you do not want to waste time reading the table, the results of the first 5 nations and the last 5 can be summarized in the 2 figures below.')
