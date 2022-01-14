@@ -298,7 +298,7 @@ with st.container():
                     
                     use_column_width=True)
     with right_column:
-        st.write('In order to compare how covid affected happiness, we have to merge 2020 and 2021 datasets. After that, we have to select a good visualization in order to point out the differences, trying to display as many relevant information as possibile. For this reason I decided to use a the violin plot, which shows the full distribution of the data while summarizing the statistics that are contained in a box plot. Horizontal violin plots are very useful if we want to deal with different categories in the same chart, as how the happiness change for every region. You can easily see for example, that in the Western Europe the happiness is almost the same as 2020, while in Sub-Saharian Africa and South Asia, the people are more happy after covid.')
+      st.write('In order to compare how covid affected happiness, we have to merge the 2020 and 2021 datasets. After that, we have to select a good visualization in order to point out the differences, trying to display as much relevant information as possible. For this reason, I decided to use a violin plot, which shows the full distribution of the data while summarizing the statistics that are contained in a box plot. Horizontal violin plots are very useful if we want to deal with different categories in the same chart, as to how happiness change for every region. You can easily see for example, that in Western Europe the happiness is almost the same as in 2020, while in Sub-Saharian Africa and South Asia, the people are happier after covid.')
 
 st.write("[Click here to download the data from 2015 to 2021 ](https://www.kaggle.com/mathurinache/world-happiness-report/download)")
 st.write("---")
@@ -401,7 +401,7 @@ fig_7 = px.sunburst(data_frame=data_2021,
 
 
 st.subheader('This is a sunburst chart')
-st.write('In order to better visualize the entire happiness dataset, I decided to use a Sunburst chart. This type of chart is very useful to visualize every country in the world, divided by region. The radial orientation of this particlar chart is way more efficient compared to an orizontal or vertical visualization. Due to its circular shape, every element in the chart has the same importance, and there is also a small difference in the slice in proportion to the happiness of each nation. The chart is very intuitive to read, and is also interactive, the ladder score of every country can be read just moving the cursor on the chart. Moreover the color palette used, let very easy to see how happy they are in different part of the world without seeing the ladder score, and it is also easy to spot outliers.  ')
+st.write('In order to better visualize the entire happiness dataset, I decided to use a Sunburst chart. This type of chart is very useful to visualize every country in the world, divided by region. The radial orientation of this particular chart is way more efficient compared to a horizontal or vertical visualization. Due to its circular shape, every element in the chart has the same importance, and there is also a small difference in the slice in proportion to the happiness of each nation. The chart is very intuitive to read and is also interactive, the ladder score of every country can be read just by moving the cursor on the chart. Moreover, the color palette used, let it very easy to see how happy they are in a different part of the world without seeing the ladder score, and it is also easy to spot outliers.')
 st.plotly_chart(fig_7)
 
 
@@ -419,7 +419,7 @@ with st.container():
 
     left_column, right_column = st.columns(2)
     with left_column:
-        st.write('This is an interactive world map which shows the happiness. As you can see i have used the same color palette of the sunburst. This kind of visualization is good in order to see all the coutries in a geographical map. Is completely intercative, it is possible to zoom on some specific areas and also, with the use of the cursor, to see the happiness score and the name of the country. The data that are missing are displayed in grey, while the white part is everything that is not a country. ')
+      st.write('This is an interactive world map that shows happiness. As you can see I have used the same color palette of the sunburst. This kind of visualization is good in order to see all the countries on a geographical map. Is completely interactive, it is possible to zoom on some specific areas and also, with the use of the cursor, to see the happiness score and the name of the country. The data that are missing are displayed in grey, while the white part is everything that is not a country.')
       
     with right_column:
         st.plotly_chart(fig)
@@ -440,7 +440,8 @@ df = pd.DataFrame(data)
 
 with st.container():
     st.title('Health indicators in a European comparison')
-    st.markdown('The goal of this Bar Plot, is to compare different European countries. The data are shown from 0 to 1, where 1 is given to the country that has the best metric about a certain topic, while the other countries have lower values in percentage compared to the first with the value 1. Obviously this visualization is good to understand who has the better metrics compared to other countries but at the same time loses the real data. For this reason, in order not to have a loss of information, it is possible to consult interactively the individual data below. For example Switzerland has 71.23 percent of suicide mortality compared to France. Italy spends 42.07 percent for the health of each citizen compared to what Norway spends. Now you can make your comparisons directly on the chart.') 
+    st.markdown('The goal of this Bar Plot is to compare different European countries. The data are shown from 0 to 1, where 1 is given to the country that has the best metric about a certain topic, while the other countries have lower values in percentage compared to the first with the value 1. Obviously, this visualization is good to understand who has the better metrics compared to other countries but at the same time loses the real data. For this reason, in order not to have a loss of information, it is possible to consult interactively the individual data below. For example, Switzerland has 71.23 percent suicide mortality compared to France. Italy spends 42.07 percent on the health of each citizen compared to what Norway spends. Now you can make your comparisons directly on the chart.')
+    
 
 
     months = df['Country']
@@ -484,7 +485,7 @@ with st.container():
     st.plotly_chart(fig_8)
     st.write("[Click here to download the data (data are from 2017) ](https://www.bfs.admin.ch/bfsstatic/dam/assets/15324707/master)")
 
-st.markdown('As we can see the Switzerland is the best for the male life expectancy, and for the happiness score. We can see also that Italy has the lowest suicide rate, while having the lowest happiness score and the lowest health expenditure per capita. ')
+st.markdown('As we can see Switzerland is the best for the male life expectancy, and for the happiness score. We can see also that Italy has the lowest suicide rate, while having the lowest happiness score and the lowest health expenditure per capita. ')
 
 st.write('---')
 
@@ -512,14 +513,14 @@ if st.button('Click here to show also the scatterplot between the ladder score a
     st.text('Click on the legend to select or unselect countries for a specific comparison!')
     st.plotly_chart(fig_2)
 
-st.markdown('The scatterplot that best explain the correlation between happiness and health is undoubtely the Health system costs in dollars per inhabitant. Infact we can clearly see that the countries that spend more on the health of their citizens are the ones who have the most happy people.')
+st.markdown('The scatterplot that best explains the correlation between happiness and health is undoubtedly the Health system costs in dollars per inhabitant. In fact, we can clearly see that the countries that spend more on the health of their citizens are the ones who have the happiest people.')
 
 
 
 fuldf = pd.read_csv("dff.csv")
  
 st.subheader('Documentation on how to improve a Viz')
-st.write('In this portfolio we analyzed how some features impact on the happiness of a country (as health expenditure and GDP per capita). Now we want to analyze how the freedome to make life choices impact the happiness of a country. I will show how, improving the same visualization (a scatterplot) we can improve the understanding and the quality of the plot. In order to see the difference you can click 3 different buttons below, that will show how, using the same data, the visualization can change a lot')
+st.write('In this portfolio, we analyzed how some features impact the happiness of a country (as health expenditure and GDP per capita). Now we want to analyze how the freedom to make life choices impact the happiness of a country. I will show how by improving the same visualization (a scatterplot) we can improve the understanding and the quality of the plot. In order to see the difference, you can click 3 different buttons below, which will show how, using the same data, the visualization can change a lot.')
 
 fig_1 = px.scatter(data_frame = fuldf,
            x = 'Freedom', 
@@ -536,7 +537,7 @@ fig_2 = px.scatter(data_frame = fuldf,
            hover_name = 'Country', 
            title = 'Happiness Scores vs GDP')
 
-st.write('Here there is an improved version of the first plot, where you can see the country name, and we added a color palette to the happiness feature')
+st.write('Here there is an improved version of the first plot, where you can see the country name, and we added a color palette to the happiness feature.')
 if st.button('Click here to show an intermediate version of the scatterplot'):
     st.plotly_chart(fig_2)
 
@@ -552,7 +553,7 @@ fig_3 = px.scatter(data_frame = fuldf,
            hover_name = 'Country', 
            title = 'Happiness Scores vs GDP')
 
-st.write('Now we make it more informative. We add the size, that represent the GDP per capita, so the bigger is the scatter, the higher is the GDP per capita. Moreover we make also an animation to the chart, in order to dispaly how over the years things changed (from 2015 to 2019). We can easily see a clear correlation among happiness, GDP per capita, and freedom to make life choices.')
+st.write('Now we make it more informative. We add the size, that represents the GDP per capita, so the bigger is the scatter, the higher is the GDP per capita. Moreover, we make also an animation to the chart, in order to display how over the years things changed (from 2015 to 2019). We can easily see a clear correlation between happiness, GDP per capita, and freedom to make life choices.')
 
 if st.button('Click here to show an advanced version of the scatterplot'):
     st.plotly_chart(fig_3)
@@ -573,8 +574,8 @@ st.markdown('**Python Packages**')
 
 st.write("[Matplotlib -> static,interactive, and animated visualization](https://matplotlib.org/)")
 st.write("[Seaborn -> build on top of matplotlib and make your viz astonishing ](https://seaborn.pydata.org/)")
-st.write("[Plotly -> my favorite, easy to use and useful to make all kind of plots also 3D and interactive. It has some unique graphs that others doesn't have](https://plotly.com/)")
-st.write("[Pandas -> all kind of data manipulation, it is a must to clean and make your dataset usable](https://pandas.pydata.org/)")
+st.write("[Plotly -> my favorite, easy to use and useful to make all kind of plots also 3D and interactive. It has some unique graphs that others don't have](https://plotly.com/)")
+st.write("[Pandas -> all kinds of data manipulation, it is a must to clean and make your dataset usable](https://pandas.pydata.org/)")
 st.write("[Numpy -> statistics, matrix operations, and much more](https://numpy.org/)")
 st.write("[Streamlit -> one of the best alternatives to build and share data apps, very useful and easy to use ](https://streamlit.io/)")
 
@@ -583,11 +584,11 @@ st.write('---')
 
 st.markdown('**Other useful resourches**')
 st.write("[Website with all the data viz resourches -> data sources, blogs, tools and packages, chart lists, ispiration websites, etc](https://datavizcatalogue.com/resources.html)")
-st.write("[DataIsBeautiful -> best reddit group for data viz and more ](https://www.reddit.com/r/dataisbeautiful/)")
+st.write("[DataIsBeautiful -> best Reddit group for data viz and more ](https://www.reddit.com/r/dataisbeautiful/)")
 st.write("[Kaggle -> is a social network for data, code, etc. My favourite resource by far](https://www.kaggle.com/)")
 st.write("[Opendata.swiss -> Swiss open government data](https://opendata.swiss/de)")
 st.write("[Data professor -> YouTube channel with useful videos from beginner to advanced for data visualization](https://www.youtube.com/c/DataProfessor/videos)")
-st.write("[Streamlit cheat sheet -> most of the basic Streamlit comands visualized in an efficent way, very useful!](https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/master/app.py)")
+st.write("[Streamlit cheat sheet -> most of the basic Streamlit comamnds visualized in an efficent way, very useful!](https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/master/app.py)")
 
 st.write('---')
 
