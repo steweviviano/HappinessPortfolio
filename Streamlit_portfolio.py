@@ -515,7 +515,7 @@ if st.button('Click here to show also the scatterplot between the ladder score a
 
 st.markdown('The scatterplot that best explains the correlation between happiness and health is undoubtedly the Health system costs in dollars per inhabitant. In fact, we can clearly see that the countries that spend more on the health of their citizens are the ones who have the happiest people.')
 
-
+st.write('---')
 
 fuldf = pd.read_csv("dff.csv")
  
