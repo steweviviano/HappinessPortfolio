@@ -535,7 +535,7 @@ fig_2 = px.scatter(data_frame = fuldf,
            y = 'Happiness Score', 
            color = 'Happiness Score', 
            hover_name = 'Country', 
-           title = 'Happiness Scores vs GDP')
+           title = 'Happiness Scores vs Freedom')
 
 st.write('Here there is an improved version of the first plot, where you can see the country name, and we added a color palette to the happiness feature.')
 if st.button('Click here to show an intermediate version of the scatterplot'):
@@ -551,7 +551,7 @@ fig_3 = px.scatter(data_frame = fuldf,
            size = 'GDP', 
            color = 'Happiness Score', 
            hover_name = 'Country', 
-           title = 'Happiness Scores vs GDP')
+           title = 'Happiness Scores vs Freedom vs GDP')
 
 st.write('Now we make it more informative. We add the size, that represents the GDP per capita, so the bigger is the scatter, the higher is the GDP per capita. Moreover, we make also an animation to the chart, in order to display how over the years things changed (from 2015 to 2019). We can easily see a clear correlation between happiness, GDP per capita, and freedom to make life choices.')
 
