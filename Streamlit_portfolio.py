@@ -405,7 +405,7 @@ st.write('In order to better visualize the entire happiness dataset, I decided t
 st.plotly_chart(fig_7)
 
 
-
+st.write('---')
    
 
 
