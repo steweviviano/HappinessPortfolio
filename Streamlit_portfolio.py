@@ -588,7 +588,7 @@ st.write("[DataIsBeautiful -> best Reddit group for data viz and more ](https://
 st.write("[Kaggle -> is a social network for data, code, etc. My favourite resource by far](https://www.kaggle.com/)")
 st.write("[Opendata.swiss -> Swiss open government data](https://opendata.swiss/de)")
 st.write("[Data professor -> YouTube channel with useful videos from beginner to advanced for data visualization](https://www.youtube.com/c/DataProfessor/videos)")
-st.write("[Streamlit cheat sheet -> most of the basic Streamlit comamnds visualized in an efficent way, very useful!](https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/master/app.py)")
+st.write("[Streamlit cheat sheet -> most of the basic Streamlit commands visualized in an efficent way, very useful!](https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/master/app.py)")
 
 st.write('---')
 
