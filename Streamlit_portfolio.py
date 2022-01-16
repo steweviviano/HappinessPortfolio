@@ -159,7 +159,8 @@ result = [df1, df2]
   
 df1 = pd.concat(result)
 df1 = df1.sort_values(by =['Ladder score'],ascending = False)
-tr1 = go.Bar(x = df1['Country name'],
+tr1 = go.Bar(title = "The 5 happiest countries vs the 5 most unahappy",
+             x = df1['Country name'],
              y = df1['Explained by: Log GDP per capita'],
              name = 'Explained by: Log GDP per capita',
              marker = dict(color = 'SteelBlue'))
