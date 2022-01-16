@@ -196,7 +196,7 @@ data_go = [tr1,tr2,tr3,tr4,tr5,tr6]
 layout= dict(title = "The 5 happiest countries vs the 5 most unahappy",
              title_x = 0.5,
              barmode = 'relative',
-             title_font = dict(size = 16,color = 'White'),
+             title_font = dict(size = 16,color = 'Black'),
              xaxis = dict(tickangle = 45)
             
             )
