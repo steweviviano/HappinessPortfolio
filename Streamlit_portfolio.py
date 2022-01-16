@@ -395,7 +395,8 @@ fig_7 = px.sunburst(data_frame=data_2021,
                   values="Ladder score",
                   color="Ladder score",
                   width=900, 
-                  height=900)
+                  height=900,
+                  title="Happiness divided by world's regions")
 
 
 
