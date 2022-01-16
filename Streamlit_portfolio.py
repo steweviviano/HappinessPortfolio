@@ -430,7 +430,7 @@ st.write('---')
 data = {'Country': ['Austria', 'France', 'Germany', 'Italy', 'Netherlands', 'Norway', 'Switzerland', 'UK' ],
         'Suicide mortality per 100k inhabitants': [12.4,14.6,9.5,5.5,10.6,11.6,10.4,7.3],
         'Health system costs in dollars per inhabitant': [5538,5154,6224,3485,5436,8283,7280,4290],
-        'Male life expectancy': [79.4,79.7,78.6,81.2,80.3,81.1,81,7,79.5],
+        'Male life expectancy': [79.4,79.7,78.6,81.2,80.3,81.1,81.7,79.5],
         'Alcohol consumption (in liters per year)': [12.2,11.6,10.8,7.8,8.3,6,9.1,9.8],
         'Ladder Score': [7.26,6.69,7.15,6.48,7.46,7.39,7.57,7.06]
         }
