@@ -484,7 +484,7 @@ with st.container():
     st.text('Click on the legend to select or unselect the metrics for a specific comparison!')
 
 # Here we modify the tickangle of the xaxis, resulting in rotated labels.
-    fig_8.update_layout(barmode='group', xaxis_tickangle=-45)
+    fig_8.update_layout(barmode='group', xaxis_tickangle=-45, title="Health indicators in a European comparison")
     st.plotly_chart(fig_8)
     st.write("[Click here to download the data (data are from 2017) ](https://www.bfs.admin.ch/bfsstatic/dam/assets/15324707/master)")
 
