@@ -427,13 +427,14 @@ st.write('---')
 
 
 # assign data of lists.
-data = {'Country': ['Switzerland', 'Germany', 'France', 'Italy', 'Austria', 'Netherlands', 'Norway', 'UK'],
-        'Suicide mortality per 100k inhabitants': [10.4,9.5,14.6,5.5,12.4,10.6,11.6,7.3],
-        'Health system costs in dollars per inhabitant': [7280,6224,5154,3485,5538,5436,8283,4290],
-        'Male life expectancy': [81.7,78.6,79.7,81.2,79.4,80.3,81.1,79.5],
-        'Alcohol consumption (in liters per year)': [9.1,10.8,11.6,7.8,12.2,8.3,6.0,9.8],
-        'Ladder Score': [7.57, 7.15, 6.69, 6.48,7.26,7.46,7.39,7.06]
+data = {'Country': ['Austria', 'France', 'Germany', 'Italy', 'Netherlands', 'Norway', 'Switzerland', 'UK' ],
+        'Suicide mortality per 100k inhabitants': [12.4,14.6,9.5,5.5,10.6,11.6,10.4,7.3],
+        'Health system costs in dollars per inhabitant': [5538,5154,6224,3485,5436,8283,7280,4290],
+        'Male life expectancy': [79.4,79.7,78.6,81.2,80.3,81.1,81,7,79.5],
+        'Alcohol consumption (in liters per year)': [12.2,11.6,10.8,7.8,8.3,6,9.1,9.8],
+        'Ladder Score': [7.26,6.69,7.15,6.48,7.46,7.39,7.57,7.06]
         }
+        
 # Create DataFrame.
 df = pd.DataFrame(data)
 # Print the output.
