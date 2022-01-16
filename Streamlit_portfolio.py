@@ -193,10 +193,10 @@ tr6 = go.Bar(x = df1['Country name'],
 
 
 data_go = [tr1,tr2,tr3,tr4,tr5,tr6]
-layout= dict(title = "The 5 happiest countries vs the 5 most unahappy",
+layout= dict(title = "The 5 happiest countries vs the 5 most unahappy, contribution of 6 variables",
              title_x = 0.5,
              barmode = 'relative',
-             title_font = dict(size = 16,color = 'Black'),
+             title_font = dict(size = 16,color = 'Orange'),
              xaxis = dict(tickangle = 45)
             
             )
